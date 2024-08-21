@@ -107,6 +107,17 @@ Example:
 bin/console app:import-customer https://randomuser.me/api?results=100&nat=BR
 ```
 
+## Testing
+
+Testing is implemented using PHPUnit and Symfony's testing tools. To run tests, use:
+
+```bash
+bin/phpunit
+```
+
+This command will execute the test suite and provide feedback on your code's correctness.
+
+
 ## Room for Improvements
 
 Due to limited time, the following improvements were considered but not implemented. If you are interested in enhancing this project, feel free to address these areas:
@@ -126,5 +137,7 @@ Due to limited time, the following improvements were considered but not implemen
 7. **Configuration Management:** Improving configuration management, such as parameterizing different environments (development, staging, production), could enhance deployment flexibility.
 
 8. **Containerized Docker Setup:** Currently, only the database is set up with Docker. It would be beneficial to containerize the entire application, including the Symfony application, to ensure consistent environments and simplify deployment. A Dockerfile and `docker-compose.yml` for the Symfony application could be added for a complete setup.
+
+---
 
 Feel free to use this README.md as a reference or contribute to these improvements.
